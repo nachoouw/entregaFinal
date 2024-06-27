@@ -1,0 +1,101 @@
+
+{% extends 'app/base.html'%}
+
+
+
+{% block content %}
+{%load static%}
+
+<link rel="stylesheet" href="{%static 'app/css/style_nutricion.css'%}">
+
+      <header>
+        <h1>Nutricion </h1>
+      </header>
+
+      <div class="container-modal m-4 mb-4 ">
+
+            <!-- Button trigger modal -->
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Informacion importante
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">¡¡Informacion!!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Recordar que estas son informaciones especificas y comprobadas, sin embargo, tomar bajo mirada de un medico profesional 
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+      <div class="container-items">
+
+        <div class="item">
+            <img src="{%static 'app/img/Whey2k_1_600px.png'%}" alt="">
+
+            <div class="info-item">
+                <h3>Proteina</h3>
+                <p> La proteína en polvo es un suplemento nutricional popular que proporciona una fuente concentrada de proteínas
+                    Se utiliza para aumentar la ingesta diaria de proteínas, lo que promueve la recuperación muscular, el crecimiento y la reparación de tejidos. Es especialmente útil para deportistas y personas activas que buscan mantener o aumentar la masa muscular.</p>
+            </div>
+        </div>
+
+         <div class="item">
+            <img src="{%static 'app/img/creatina2.png'%}" alt="">
+
+            <div class="info-item">
+                <h3>Creatina</h3>
+                <p>La creatina es un suplemento que mejora el rendimiento deportivo, aumentando la energía muscular y favoreciendo la recuperación después del ejercicio. Es útil para actividades de alta intensidad y corta duración como el levantamiento de pesas.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{%static 'app/img/omega.png'%}" alt="">
+
+            <div class="info-item">
+                <h3>Omega 3</h3>
+                <p>El omega-3 es un ácido graso esencial que promueve la salud del corazón, el cerebro y las articulaciones. Ayuda a reducir la inflamación, mejora la función cerebral y cardiovascular, y puede aliviar el dolor en las articulaciones. Se encuentra en alimentos como pescado, nueces y semillas de lino, y también está disponible como suplemento. Es crucial para una salud óptima.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{%static 'app/img/mr-hyde-xtreme2201 (1).png'%}" alt="">
+
+            <div class="info-item">
+                <h3>Pre-entreno</h3>
+                <p>Los pre-entrenamientos son suplementos que aumentan la energía, resistencia y enfoque mental durante el ejercicio. Contienen ingredientes como cafeína y creatina para mejorar el rendimiento y la capacidad de entrenamiento. Son populares entre deportistas para maximizar el rendimiento durante el ejercicio.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{%static 'app/img/vegetalprotein.png'%}" alt="">
+
+            <div class="info-item">
+                <h3>Proteina vegetal</h3>
+                <p> La proteína vegetal es un suplemento derivado de plantas como guisantes, soja o arroz. Es una alternativa para aquellos que siguen dietas vegetarianas o veganas y ofrece beneficios para la salud, como la recuperación muscular y la reducción del riesgo de enfermedades crónicas. Es una opción sostenible para complementar la dieta.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{%static 'app/img/vitaminas.png'%}" alt="">
+
+            <div class="info-item">
+                <h3>Multivitamínicos y minerales</h3>
+                <p>Los multivitamínicos y minerales son suplementos que proporcionan una variedad de nutrientes esenciales para el cuerpo, como vitaminas y minerales. Ayudan a mantener la salud general, fortalecen el sistema inmunológico y apoyan funciones vitales como la salud ósea y metabólica. Son una forma conveniente de asegurar una ingesta adecuada de nutrientes para una vida saludable.</p>
+            </div>
+        </div>
+        
+      </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+{%endblock%}

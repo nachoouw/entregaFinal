@@ -1,0 +1,35 @@
+{% extends 'app/base.html'%}
+
+{% block title %}Crear/Editar Plan de Entrenamiento - My Fitlife{% endblock %}
+{% block content %}
+
+{% load static %}
+<div class="row">
+    <div class="col">
+        <h2>{% if form.instance.pk %}Editar{% else %}Crear{% endif %} Plan de Entrenamiento</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="id_Entrenamiento">Tipo Entrenamiento</label>
+                {{ form.Entrenamiento }}
+            </div>
+            <div class="form-group">
+                <label for="id_Valor">Valor</label>
+                {{ form.Valor }}
+            </div>
+            <div class="form-group">
+                <label for="id_DuracionDias">Duración en días</label>
+                {{ form.DuracionDias }}
+            </div>
+            <div class="form-group">
+                <label for="id_Objetivo">Objetivo</label>
+                {{ form.Objetivo }}
+            </div>
+            <div class="espacio bg-primary-emphasis  py-1 m-  text-center"></div>
+            <button type="submit" class="btn btn-dark">Guardar</button>
+            <a href="{% url 'plan_entreno_list'%}" class="btn btn-dark">Listar</a>
+        </form>
+    </div>
+</div>
+<div class="espacio bg-primary-emphasis  py-3 m-  text-center"></div>
+{% endblock %}

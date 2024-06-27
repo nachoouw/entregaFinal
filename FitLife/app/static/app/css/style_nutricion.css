@@ -1,0 +1,89 @@
+.navbar-nav .nav-link:hover {
+    color: #17a2b8; /* Cambia de color cuando se pasa el ratón */
+  }
+  .navbar-nav .nav-link-active:hover {
+    color: #17a2b8; /* Cambia de color cuando se pasa el ratón */
+  }
+
+
+img{
+    max-width: 100%;
+}
+
+
+.container-prod{
+    display: flex;
+    justify-content:space-between;
+
+
+}
+
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.20);
+}
+
+.info-item{
+    padding: 15px 30px;
+    display: auto;
+
+}
+
+
+.container-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuir los elementos uniformemente en el contenedor */
+  }
+  
+  .item {
+    width: calc(33.33% - 20px); /* Establecer el ancho para que quepan tres elementos por fila */
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  @media (max-width: 992px) {
+    .item {
+      width: calc(50% - 20px); /* En pantallas más pequeñas, mostrar dos elementos por fila */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .item {
+      width: 100%; /* En pantallas aún más pequeñas, mostrar un elemento por fila */
+    }
+  }
+  
+  header {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+header h1 {
+    font-size: 36px; 
+    margin: 0; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-modal{
+    text-align: center;
+}
+
+  

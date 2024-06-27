@@ -1,0 +1,46 @@
+.navbar-nav .nav-link:hover {
+    color: #17a2b8; 
+  }
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/img/fondo-blanco-negro_23-2150531045.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #f2f2f2; 
+}
+
+.container {
+    background-color: #ffffff;
+    border: 1px solid #808080; 
+    color: #333333; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #cccccc;
+    border-color: #cccccc; 
+    color: #ffffff; 
+}
+
+.btn-primary:hover {
+    background-color: #999999; 
+    border-color: #999999; 
+}
+.navbar .container1 {
+    background-color: #ffffff;
+    border: 1px solid #808080; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    
+}

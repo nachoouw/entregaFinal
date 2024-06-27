@@ -1,0 +1,67 @@
+{% extends 'app/base.html' %}
+
+{% block title %}Iniciar sesión - My Fitlife{% endblock %}
+
+{% block content %}
+<div class="espacio bg-primary-emphasis  py-5 m-  text-center"></div>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <div class="card custom-card">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Iniciar sesión</h2>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                {{ form.username.label_tag }}
+                            </div>
+                            <div class="col-md-9">
+                                {{ form.username }}
+                                {% if form.username.help_text %}
+                                    <small class="form-text text-muted">{{ form.username.help_text }}</small>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                {{ form.password.label_tag }}
+                            </div>
+                            <div class="col-md-9">
+                                {{ form.password }}
+                                {% if form.password.help_text %}
+                                    <small class="form-text text-muted">{{ form.password.help_text }}</small>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-dark mt-3 d-block mx-auto">Iniciar sesión</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="espacio bg-primary-emphasis  py-5 m-  text-center"></div>
+
+<style>
+    .custom-card {
+        border: 2px solid #343a40; /* Borde gris oscuro */
+        border-radius: 10px; /* Bordes redondeados */
+        padding: 20px; /* Espacio interno */
+        margin-top: 20px; /* Margen superior */
+    }
+</style>
+
+{% endblock %}
